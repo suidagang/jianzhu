@@ -1,1 +1,13 @@
-.index-content{height:30px;text-align:center;line-height:30px;width:100%;color:purple;font-size:24px}.a_box{margin-top:150px}.a_box a{line-height:60px;text-align:center;width:100%;display:block}
+.index-content {
+  text-align: center;
+  line-height: 30px;
+  color: purple;
+  font-size: 24px;
+  width: 100%;
+  overflow: hidden;
+}
+.banner-box {
+  width: 1440px;
+  height: 500px;
+  margin: 0 auto;
+}

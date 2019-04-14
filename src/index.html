@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>破碎 切割</title>
     <link rel="stylesheet" href="css/famework/index.css">
+    <link rel="stylesheet" href="css/famework/swiper.css">
     <link rel="stylesheet" href="css/head/head.css">
     <link rel="stylesheet" href="css/index/index.css">
+    <script src='js/swiper.min.js'></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
     <style>
     </style>
 </head>
 <body>
      @@include('./componet/header.html')
-    <div class="index-content">我是首页</div>
-    <div class="a_box">
-        <p><a href="view/a.html">第一个页面</a></p>
-        <p><a href="view/b.html">第二个页面</a></p>
-        <p><a href="view/c.html">第三个页面</a></p>
-    </div>
+     @@include('./componet/nav.html')
+    <div class="banner-box swiper-container">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide"><img src='/image/banner1.jpg' /></li>
+          <li class="swiper-slide"><img src='/image/banner2.png' /></li>
+        </ul>
+      </div>
+      <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: { 
+                delay: 10000,//1秒切换一次
+            },
+            // spaceBetween: 30,
+            effect: 'fade',
+        })
+      </script>
     <script src="js/index.js"></script>
      @@include('./componet/footer.html')
 </body>

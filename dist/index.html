@@ -4,29 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>破碎 切割</title>
     <link rel="stylesheet" href="css/famework/index.css">
+    <link rel="stylesheet" href="css/famework/swiper.css">
     <link rel="stylesheet" href="css/head/head.css">
     <link rel="stylesheet" href="css/index/index.css">
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
     <style>
     </style>
 </head>
 <body>
      <div class="navbar-header">
     <div class="header-logo">
-        <img src="../image/logo.jpg">
+        <a href="/">
+            <img src="../image/logohong.png">
+        </a>
     </div>
 </div>
 
-    <div class="index-content">我是首页</div>
-    <div class="a_box">
-        <p><a href="view/a.html">第一个页面</a></p>
-        <p><a href="view/b.html">第二个页面</a></p>
-        <p><a href="view/c.html">第三个页面</a></p>
-    </div>
+     <div class="nav-bar">
+    <ul>
+        <li><a href="/">首页</a></li>
+        <li><a href="/view/a.html">公司简介</a></li>
+        <li><a href="/view/a.html">服务项目</a></li>
+        <li><a href="/view/a.html">工程案例</a></li>
+        <li><a href="/view/a.html">机械设备</a></li>
+        <li><a href="/view/a.html">新闻资讯</a></li>
+        <li><a href="/view/a.html">流程/售后</a></li>
+        <li><a href="/view/a.html">联系我们</a></li>
+        <li><a href="/view/a.html">客户留言</a></li>
+    </ul>
+</div>
+    <div class="banner-box swiper-container">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide"><img src="/image/banner1.jpg"></li>
+          <li class="swiper-slide"><img src="/image/banner2.png"></li>
+        </ul>
+      </div>
+      <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: { 
+                delay: 10000,//1秒切换一次
+            },
+            // spaceBetween: 30,
+            effect: 'fade',
+        })
+      </script>
     <script src="js/index.js"></script>
      <div class="nav-footer">
-       公共底部
+    <div class="footer-content">
+        <div>Copyright © 2018-2028,www.sclycc.com,All rights reserved</div>
+        <div>版权所有 ©四川玲远建筑劳务有限公司 未经许可 严禁复制 建议使用1024X768分辨率浏览本站</div>
+        <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">蜀ICP备18021884号-1</a>
+    </div>
 </div>
 </body>
 </html>
